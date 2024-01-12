@@ -12,27 +12,29 @@ function WeatherDetails({
 }) {
   const [weatherState, setWeatherState] = useState("");
   useEffect(() => {
-
-    if(weatherType){
-      switch (weatherType){
+    if (weatherType) {
+      switch (weatherType) {
         case "Clouds":
-          setWeatherState('wi-day-cloudy');
+          setWeatherState("wi-day-cloudy");
           break;
         case "Haze":
-          setWeatherState('wi-fog');
+          setWeatherState("wi-fog");
           break;
         case "Clear":
-          setWeatherState('wi-day-sunny');
+          setWeatherState("wi-day-sunny");
           break;
         case "Mist":
-          setWeatherState('wi-dust');
+          setWeatherState("wi-dust");
           break;
         case "Rain":
-          setWeatherState('wi-day-rain');
+          setWeatherState("wi-day-rain");
+          break;
+        case "Snow":
+          setWeatherState("wi-day-snow");
           break;
 
         default:
-          setWeatherState('wi-day-sunny');
+          setWeatherState("wi-day-sunny");
           break;
       }
     }
@@ -52,7 +54,7 @@ function WeatherDetails({
         </div>
         <div className="weatherInfo">
           <div className="temperature">
-            <span>{temp}&deg;</span>
+            <span>{temp}&deg;C</span>
           </div>
           <div className="description">
             <div className="weatherCondition">{weatherType}</div>
@@ -92,7 +94,7 @@ function WeatherDetails({
                 <i className={"wi wi-rain"}></i>
               </p>
               <p className="extra-info-leftside">
-                {pressure}
+                {pressure} hPa
                 <br />
                 Pressure
               </p>
@@ -103,7 +105,7 @@ function WeatherDetails({
                 <i className={"wi wi-strong-wind"}></i>
               </p>
               <p className="extra-info-leftside">
-                {speed}
+                {speed} m/s
                 <br />
                 Speed
               </p>
