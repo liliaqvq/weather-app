@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Weather App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -7,6 +7,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 In the project directory, you can run:
 
 ### `npm start`
+
+Search by City:
+![image](https://github.com/liliaqvq/weather-app/assets/130264861/bc28d03d-b875-45bd-9e91-b90727b1a0fe)
+
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
